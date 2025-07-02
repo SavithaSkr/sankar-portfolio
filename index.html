@@ -13,6 +13,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -68,11 +71,38 @@
         </div>
       </div>
     </section>
+    <!-- contact -->
+    <section id="contact" class="contact-section">
+      <div class="contact-wrap">
+        <h3>Let's Talk</h3>
+        <form id="contactForm">
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="Your Name" required />
 
+          <label for="phone">Phone </label>
+          <input type="tel" id="phone" placeholder="Your Phone number" />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <label for="message">Message *</label>
+          <textarea
+            type="message"
+            id="message"
+            row="6"
+            placeholder="write your message"
+            required
+          ></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
     <footer>
       <p>&copy; 2025 Cybersecurity, All Rights Reserved</p>
       <div class="social-links">
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </footer>
     <!-- link to javascript files
